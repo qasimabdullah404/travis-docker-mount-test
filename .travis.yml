@@ -1,8 +1,8 @@
 os: linux
-dist: xenial
+dist: focal
 
 services:
   - docker
 
 script:
-  - docker buildx build -t my_image .
+  - DOCKER_BUILDKIT=1 docker build -t my_image .
