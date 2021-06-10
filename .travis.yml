@@ -5,4 +5,4 @@ services:
   - docker
 
 script:
-  - DOCKER_BUILDKIT=1 docker build -t my_image .
+  - docker buildx build -t my_image .
